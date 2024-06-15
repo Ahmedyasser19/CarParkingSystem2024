@@ -1,0 +1,73 @@
+.carSlots {
+  position: absolute;
+}
+
+:root {
+  --button-top: 230px;
+  --button-btm: 10px;
+  --button-rotate1: 30deg;
+  --button-rotate2: -30deg;
+}
+/* 76 */
+
+.B1,
+.B2,
+.B3,
+.B4,
+.B5,
+.B6 {
+  z-index: 10;
+  position: absolute;
+  top: var(--button-top);
+  transform: rotate(var(--button-rotate1));
+  background-image: url(../../../public/car.png) !important;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+}
+
+.C1,
+.C2,
+.C3,
+.C4,
+.C5,
+.C6 {
+  z-index: 10;
+  position: absolute;
+  top: var(--button-btm);
+  transform: rotate(var(--button-rotate2));
+
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+}
+
+.B1,
+.C1 {
+  left: 32px;
+}
+
+.B2,
+.C2 {
+  left: 108px;
+}
+
+.B3,
+.C3 {
+  left: 184px;
+}
+
+.B4,
+.C4 {
+  left: 250px;
+}
+
+.B5,
+.C5 {
+  left: 320px;
+}
+
+.B6,
+.C6 {
+  left: 400px;
+}

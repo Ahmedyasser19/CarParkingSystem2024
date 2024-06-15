@@ -1,0 +1,22 @@
+.reserve-page-wrapper {
+  display: flex;
+  height: 85vh;
+  width: 100%;
+  flex-direction: row;
+}
+
+.navButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+.stepsContents {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 25px 0 0 50px;
+}
+
+.hideMe {
+  display: none;
+}

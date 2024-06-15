@@ -1,0 +1,42 @@
+.tabs{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.tabs *{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    filter: none;
+
+    opacity: 0.9;
+}
+
+.tabs p:hover{
+    cursor: pointer;
+}
+
+.activeTab2{
+    
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    opacity: 1;
+}
+
+.generatedQrCode{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+   
+
+}
+
+.visable{
+    display: flex;
+}
+
+.notVisable{
+    display: none;
+}

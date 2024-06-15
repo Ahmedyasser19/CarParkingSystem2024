@@ -1,0 +1,113 @@
+Logic:
+Getting inside:
+    When a car wants to enter our garage, it clicks on a button on the machine placed
+    outside the garage.
+    This paper should contain a unique id for this car.
+    Each car gets 1 hour free parking then it will start to be charged 0.50$ per minute.
+
+Inside of the garage:
+    There will be scensors that are connected to a light bulb to indicate the available 
+    slots inside of the garage.
+    Red means the garage is not available and green means it's available to park in it.
+
+payment:
+    When a car wants to leave the garage, each should input his papaer id into the
+    payment machine (the website in our case simualtes that) where it will calculate
+    for him how much is he charged.
+
+
+functions:
+1. simulate the id machine with a button in the front end 
+    User clicks on a button on the front end to simulate the machine printing out a recipt
+    for the car.
+    
+    The backend shall:
+    create unique id, create qr code for the machine to scan when the car tries to enter,
+    check in date and time, check out date and time, total amount of money based on the given equation
+
+2. Front end shall display all the slots available 
+3. Front end can manually control checking in and out by removing cars from there slots (as a  admin)
+
+car use regster route
+
+
+
+front end:
+user choose start date and end date then click next button. 
+ex: 
+
+back end:
+should : get the available slots within these specific days.
+
+back end logic:
+-compare start dates for when its a clash in dates..
+
+
+something is between db dates: 
+get the two dates, compare if any of them is in the middle of any of them
+
+
+Functionalities
+
+QR Generator Page
+QR Code Generation for Vehicle Registration:
+
+Users can register their vehicles by entering their license plate number.
+The application generates a QR code for the entered license plate number.
+The status of the QR code generation is displayed (e.g., "Printing," "Printed," "Failed").
+Check-In Using QR Code:
+
+Users can check in their vehicles using the generated QR code.
+The system verifies the QR code and updates the check-in status accordingly (e.g., "Successfully checked-in," "Code is not valid," "Garage is full").
+Tabs for Different Actions:
+
+The page has two tabs: "Register" for vehicle registration and "Check-in" for vehicle check-ins.
+Status Display:
+
+The current status of the QR code generation or check-in process is displayed to the user.
+Generated and Failed Counts:
+
+The page displays the total number of successfully generated QR codes and the number of failed attempts.
+QR Code Image and Copy Button:
+
+Once a QR code is generated, it is displayed on the page with an option to copy the QR code string.
+Garage Management Page
+Display Checked-In Vehicles:
+
+The page displays a table of all vehicles currently checked into the garage, including details such as slot number, plate number, check-in time, and parking duration.
+Calculate Parking Fee:
+
+The system calculates the parking fee based on the duration of the parking.
+The first hour is free, and after that, a fee is calculated per minute.
+Payment Integration:
+
+Users can pay their parking fee via Stripe integration.
+Clicking the "Pay" button initiates the payment process, and upon successful payment, the vehicle is checked out.
+Visual Representation of Parking Slots:
+
+The page visually represents the garage with images of parked cars in the respective slots.
+Error Handling
+
+QR Generator Page
+Input Validation:
+
+The application validates the length of the entered plate number to ensure it meets the required format.
+API Error Handling:
+
+The application handles API errors by updating the status to "Failed" if the QR code generation or check-in process encounters an error.
+Button State Management:
+
+The submit button is disabled while waiting for a response from the server to prevent multiple submissions.
+A countdown timer is implemented to manage the wait time between successive registration attempts.
+Garage Management Page
+Fetch Garage Data:
+
+The application fetches the current state of the garage from the backend.
+If the fetch request fails, it logs an error without disrupting the user interface.
+Parking Fee Calculation:
+
+The system handles errors in calculating the parking fee and ensures accurate billing.
+Stripe Payment Integration:
+
+Errors during the payment process are logged, and appropriate messages are displayed to the user.
+The system checks the payment status and handles cases where the payment is not successful.
