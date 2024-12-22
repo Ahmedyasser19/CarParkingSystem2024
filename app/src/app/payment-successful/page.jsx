@@ -54,7 +54,7 @@ const Page = () => {
   }
   useEffect(() => {
     success();
-  }, []);
+  });
 
   return <div>{text}</div>;
 };

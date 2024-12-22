@@ -101,7 +101,7 @@ const QrGenerator = () => {
       case 7:
         return <p className="fail">Garage is full</p>;
       case 8:
-        return <p className="fail">QR code is required"</p>;
+        return <p className="fail">QR code is required</p>;
 
       default:
         return null;

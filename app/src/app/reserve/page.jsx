@@ -4,7 +4,7 @@ import MultistepBar from "@/components/MultistepBar/MultistepBar";
 import DateRangePicker from "@/components/dateRangePicker/DateRangePicker";
 import SlotPicker from "@/components/slotPicker/SlotPicker";
 import { useState } from "react";
-const page = () => {
+const Page = () => {
   const [step, setStep] = useState(0);
   const [Nextprop, setNextProp] = useState(false);
 

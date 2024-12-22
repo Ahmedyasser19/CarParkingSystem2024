@@ -3,20 +3,20 @@ const AboutPage = () => {
     <p>
       Logic:
       <br />
-      <br /> Getting inside: When a car wants to enter our garage, it
-      "registers" by clicking on the " generate" button in the "Home Page". This
-      simulates a user clicking on the real machine that prints a paper to enter
-      the garage. This paper contains a unique id for each car. A car gets 1
-      hour free parking then it will start to be charged 6$ per hour.
+      <br /> Getting inside: When a car wants to enter our garage, it registers
+      by clicking on the generate button in the Home Page. This simulates a user
+      clicking on the real machine that prints a paper to enter the garage. This
+      paper contains a unique id for each car. A car gets 1 hour free parking
+      then it will start to be charged 6$ per hour.
       <br />
       After registering -Getting a paper from the machine with the qr code
       printed on it-, the user scans the machine for the gates to open. we
-      simulate this by pressing "check-in" button in the "Home page"
+      simulate this by pressing check-in button in the Home page.
       <br />
       <br />
       Inside of the garage: There will be scensors that are connected to a light
       bulb to indicate the available slots inside of the garage. Red means the
-      garage is not available and green means it's available to park in it.
+      garage is not available and green means it is available to park in it.
       <br />
       <br />
       payment: When a car wants to leave the garage, each should input his
